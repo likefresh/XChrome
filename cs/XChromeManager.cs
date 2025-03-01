@@ -234,9 +234,9 @@ namespace XChrome.cs
                 Args = args,
                 Env = new Dictionary<string, string>
                     {
-                        { "GOOGLE_API_KEY", "AIzaSyCkfPOPZXDKNn8hhgu3JrA62wIgC93d44k" },
-                        { "GOOGLE_DEFAULT_CLIENT_ID", "811574891467.apps.googleusercontent.com" },
-                        { "GOOGLE_DEFAULT_CLIENT_SECRET", "kdloedMFGdGla2P1zacGjAQh" }
+                        { "GOOGLE_API_KEY", "" },
+                        { "GOOGLE_DEFAULT_CLIENT_ID", "" },
+                        { "GOOGLE_DEFAULT_CLIENT_SECRET", "" }
                     },
                 //关闭
                 IgnoreDefaultArgs = new[] { "--enable-automation", "--no-sandbox" }
