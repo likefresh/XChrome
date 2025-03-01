@@ -33,7 +33,7 @@ namespace XChrome.cs
         /// 社群页面
         /// </summary>
         /// <returns></returns>
-        public static string community_url = "http://web3tool.vip/xchrome/community";
+        public static string community_url = "";
 
         /// <summary>
         /// github
