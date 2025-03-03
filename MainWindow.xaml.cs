@@ -110,12 +110,12 @@ namespace XChrome
 
 #else
             //登陆码
-            Login login=new Login();
-            login.Owner = this;
-            login.ShowDialog();
-            if (!login.isLoginSuccess) {
-                return false;
-            }
+            // Login login=new Login();
+            // login.Owner = this;
+            // login.ShowDialog();
+            // if (!login.isLoginSuccess) {
+            //     return false;
+            // }
 #endif
 
             if(!await cs.Test.TestAndGoAsync()) {
@@ -123,8 +123,8 @@ namespace XChrome
             }
 
             //检测更新
-            AutoUpdater.SetOwner(this);
-            AutoUpdater.Start("https://down.web3tool.vip/xchrome/xchrome_update.xml");
+            // AutoUpdater.SetOwner(this);
+            // AutoUpdater.Start("https://down.web3tool.vip/xchrome/xchrome_update.xml");
 
             Func<Task> load = async () => {
                 //初始化日志
