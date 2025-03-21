@@ -146,22 +146,22 @@ namespace XChrome
             IsDebug = true;
 #else
             IsDebug=false;
-            //登陆码
-            Login login=new Login();
-            login.Owner = this;
-            login.ShowDialog();
-            if (!login.isLoginSuccess) {
-                return false;
-            }
+            // //登陆码
+            // Login login=new Login();
+            // login.Owner = this;
+            // login.ShowDialog();
+            // if (!login.isLoginSuccess) {
+            //     return false;
+            // }
 #endif
 
             if (!await cs.Test.TestAndGoAsync()) {
                 return false;
             }
 
-            //检测更新
-            AutoUpdater.SetOwner(this);
-            AutoUpdater.Start("https://down.web3tool.vip/xchrome/xchrome_update.xml");
+            // //检测更新
+            // AutoUpdater.SetOwner(this);
+            // AutoUpdater.Start("https://down.web3tool.vip/xchrome/xchrome_update.xml");
 
             
             
